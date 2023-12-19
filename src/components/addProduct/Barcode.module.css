@@ -4,10 +4,9 @@ h1 {
 
 .success {
     background-color: aliceblue;
-    margin: 20px;
-    padding: 10px;
+    margin: 10px 50px;
+    padding: 15px 20px;
     border-radius: 15px;
-
 }
 
 .successMsg {
@@ -16,9 +15,61 @@ h1 {
     text-align: center;
 }
 
-.img{
-    width: 40px;
+.img {
+    width: 2.5rem;
     margin-right: 20px;
 }
 
 /*  */
+
+
+.outerDiv {
+    background-color: aliceblue;
+    display: flex;
+    margin: 10px 50px;
+    padding: 15px 20px;
+
+    border-radius: 15px;
+}
+
+.productImg {
+    width: 20vw;
+    max-width: 300px;
+    max-height: 300px;
+    border-radius: 5px;
+}
+
+.name {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.desc {
+    text-align: center;
+    padding: 10px 15px;
+    margin: 30px 10px 10px 20px;
+}
+
+.paraBlock {
+    text-align: left;
+}
+
+.divAligner {
+    display: flex;
+    justify-content: space-evenly;
+    font-weight: 700;
+    color: #0b5ed7;
+
+}
+
+/*  */
+
+
+/*  */
+
+.barcodeDiv {
+    background-color: aliceblue;
+    margin: 10px 50px;
+    padding: 15px 20px;
+    border-radius: 15px;
+}

@@ -24,7 +24,7 @@ function CardData() {
       </div>
 
       <div className={`${styles.box} total-revenue`}>
-        <span className={`fs-2 fw-bolder sp1 ${styles.data5}`}>1,11,200</span>
+        <span className={`fs-2 fw-bolder sp1 ${styles.data5}`}>111,200</span>
         <p>Total Revenue</p>
       </div>
     </div>

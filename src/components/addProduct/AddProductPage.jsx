@@ -1,7 +1,7 @@
 import React, { useState, useRef } from "react";
 import { Link, useHref } from "react-router-dom";
 import styles from "./AddProductPage.module.css";
-import Barcode from "./Barcode"
+import Barcode from "./Barcode";
 
 function AddProductPage() {
   const Name = useRef();
@@ -11,6 +11,7 @@ function AddProductPage() {
   const Product = useRef();
   const Quantity = useRef();
   const Category = useRef();
+  const Price = useRef();
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -22,18 +23,23 @@ function AddProductPage() {
     const productDescription = Product.current.value;
     const productQuantity = Quantity.current.value;
     const productCategory = Category.current.value;
+    const productPrice = Price.current.value;
 
-    <Barcode 
-    productName ={productName}
-    productImage={productImage}
-    productId={productId}
-    productManufacturer={productManufacturer}
-    productDescription={productDescription}
-    productQuantity={productQuantity}
-    productCategory={productCategory}
 
+
+    <Barcode
+      productName={productName}
+      productImage={productImage}
+      productId={productId}
+      productManufacturer={productManufacturer}
+      productDescription={productDescription}
+      productQuantity={productQuantity}
+      productCategory={productCategory}
+      productPrice={productPrice}
     />
   };
+
+
   return (
     <>
       <h1>Add Product</h1>
@@ -51,10 +57,13 @@ function AddProductPage() {
         <label htmlFor="productName">Product Name:</label>
         <input type="text" id="productName" name="productName" ref={Name} />
 
-        
-
-        <label htmlFor="productID">Product ID:</label>
-        <input ref={Id} type="text" id="productID" name="productID" />
+        <label htmlFor="productDescription">Product Description:</label>
+        <input
+          ref={Product}
+          type="text"
+          id="productDescription"
+          name="productDescription"
+        />
 
         <label htmlFor="manufacturerName">Manufacturer Name:</label>
         <input
@@ -64,17 +73,22 @@ function AddProductPage() {
           name="manufacturerName"
         />
 
-        <label htmlFor="productDescription">Product Description:</label>
-        <input
-          ref={Product}
-          type="text"
-          id="productDescription"
-          name="productDescription"
-        />
+        <label htmlFor="productID">Product ID:</label>
+        <input ref={Id} type="text" id="productID" name="productID" />
 
         <label htmlFor="productQuantity">Product Quantity:</label>
         <input
           ref={Quantity}
+          type="number"
+          id="productQuantity"
+          name="productQuantity"
+        />
+
+        {/*  */}
+        <label htmlFor="productPrice">Product Price(Per Piece):</label>
+        <input
+          ref={Price}
+          placeholder="₹"
           type="number"
           id="productQuantity"
           name="productQuantity"
