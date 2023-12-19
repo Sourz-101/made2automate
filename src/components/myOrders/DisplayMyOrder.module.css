@@ -1,0 +1,53 @@
+.outerDiv {
+    background-color: aliceblue;
+    display: flex;
+    margin: 10px 50px;
+    padding: 15px 20px;
+    border-radius: 15px;
+}
+
+.img {
+    width: 20vw;
+    max-width: 300px;
+}
+
+.name {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.desc {
+    text-align: center;
+    padding: 10px 15px;
+    margin: 30px 10px 10px 20px;
+}
+
+.paraBlock {
+    text-align: left;
+}
+
+.detailDiv {
+    display: flex;
+    justify-content: space-evenly;
+    font-weight: 700;
+    color: #0b5ed7;
+}
+
+span {
+    color: black;
+    font-weight: 500;
+}
+
+.btns {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.btnInside {
+    display: flex;
+    align-items: center;
+}
+
+.btnInside > svg {
+    margin-right: 8px;
+  }

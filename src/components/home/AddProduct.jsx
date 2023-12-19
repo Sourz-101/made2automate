@@ -9,7 +9,9 @@ function AddProduct() {
         type="button"
         className={`btn btn-primary btn-lg ${styles.addButton} ${styles.buttonClass}`}
       >
-        <Link to="add-product-page" className={styles.btnText}>Add Products</Link>
+        <Link to="add-product-page" className={styles.btnText}>
+          Add Products
+        </Link>
         <IoMdAddCircle />
       </button>
     </>
