@@ -19,10 +19,10 @@ function MyOrderPage() {
       productName:
         "M18 Photoelectric Sensor NPN-NC PLUG-IN Type Sensing: 1 Meter II Make: DOLPHIN",
       description:
-        "M18 Photoelectric Sensor with IR(Infra-red) Lights helps in detection of any target that is opaque like Wood,Plastic,Rubber,Metal,Carbaord, etc.",
+        "M18 Photoelectric Sensor with IR(Infra-red) Lights helps in detection of any target that is opaque like Wood,Plastic,Rubber,Metal,Carbaord, etc. M18 Photoelectric Sensor with IR(Infra-red) Lights helps in detection of any target that is opaque like Wood,Plastic,Rubber,Metal,Carbaord, etc.",
       price: "550",
       customerName: "Gaurav Arora",
-      quantity: 10,
+      quantity: 12,
     },
     {
       imageLink:
@@ -30,7 +30,7 @@ function MyOrderPage() {
       productName:
         "Cyclic timer with unequal ON-OFF time + Relay Output, 6 time ranges",
       description:
-        "Used for control application where ON time and Off time can be adjusted for controlling the load which can be AC/DC Load.",
+        "Used for control application where ON time and Off time can be adjusted for controlling the load which can be AC/DC Load. Helps in detection of any target that is opaque like Wood,Plastic,Rubber,Metal,Carbaord, etc.",
       price: "600",
       customerName: "Swagat Sarkar",
       quantity: 2,
@@ -51,7 +51,7 @@ function MyOrderPage() {
         "https://i0.wp.com/made2automate.com/wp-content/uploads/2023/05/2-19.webp?fit=600%2C600&ssl=1",
       productName: "24VDC Relay OMRON MY2N-GS I 8 Pin Relay with Base",
       description:
-        "DC relay is used to switch loads like Motor or used in Control wiring. It needs a control signal which is of 24VDC to trigger.",
+        "DC relay is used to switch loads like Motor or used in Control wiring. It needs a control signal which is of 24VDC to trigger.DC relay is used to switch loads like Motor or used in Control wiring. It needs a control signal which is of 24VDC to trigger.",
       price: "350",
       customerName: "Sona Yadav",
       quantity: 20,
@@ -61,7 +61,7 @@ function MyOrderPage() {
         "https://i0.wp.com/made2automate.com/wp-content/uploads/2023/05/5-1.webp?fit=600%2C600&ssl=1",
       productName: "Optical Fiber Amplifier Sensor E3X-NA41",
       description:
-        "This Amplifier Converts the Light signal of Optical Fiber into Electrical signal which is a DC Signal which can be used to give to controller like PLC.",
+        "This Amplifier Converts the Light signal of Optical Fiber into Electrical signal which is a DC Signal which can be used to give to controller like PLC. This Amplifier Converts the Light signal of Optical Fiber into Electrical signal which is a DC Signal which can be used to give to controller like PLC.",
       price: "1,800",
       customerName: "Pranav Mathur",
       quantity: 1,
@@ -81,7 +81,7 @@ function MyOrderPage() {
         "https://i0.wp.com/made2automate.com/wp-content/uploads/2023/05/1-16.webp?fit=600%2C600&ssl=1",
       productName: "AC Contactor 3 Pole Rating: 32A I Make: SIBASS",
       description:
-        "AC contactor is used to switch heavy loads like Motor,AC or Heater. It needs a control signal which is of 220VAC to trigger.",
+        "AC contactor is used to switch heavy loads like Motor,AC or Heater. It needs a control signal which is of 220VAC to trigger. AC contactor is used to switch heavy loads like Motor,AC or Heater. It needs a control signal which is of 220VAC to trigger.",
       price: "500",
       customerName: "Rohit Banarjee",
       quantity: 4,

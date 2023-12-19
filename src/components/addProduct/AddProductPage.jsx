@@ -1,6 +1,7 @@
 import React, { useState, useRef } from "react";
-import "./AddProductFrom.css";
 import { Link, useHref } from "react-router-dom";
+import styles from "./AddProductPage.module.css";
+import Barcode from "./Barcode"
 
 function AddProductPage() {
   const Name = useRef();
@@ -8,17 +9,35 @@ function AddProductPage() {
   const Id = useRef();
   const Manufacturer = useRef();
   const Product = useRef();
-  const Quality = useRef();
+  const Quantity = useRef();
   const Category = useRef();
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    
+
+    const productImage = Image.current.value;
+    const productName = Name.current.value;
+    const productId = Id.current.value;
+    const productManufacturer = Manufacturer.current.value;
+    const productDescription = Product.current.value;
+    const productQuantity = Quantity.current.value;
+    const productCategory = Category.current.value;
+
+    <Barcode 
+    productName ={productName}
+    productImage={productImage}
+    productId={productId}
+    productManufacturer={productManufacturer}
+    productDescription={productDescription}
+    productQuantity={productQuantity}
+    productCategory={productCategory}
+
+    />
   };
   return (
     <>
       <h1>Add Product</h1>
-      <form onSubmit={handleSubmit}>
+      <form className={styles.form} onSubmit={handleSubmit}>
         <label htmlFor="productImage">Upload Product Image:</label>
         <input
           type="file"
@@ -26,27 +45,20 @@ function AddProductPage() {
           name="productImage"
           accept="image/*"
           ref={Image}
+          className={styles.input}
         />
 
         <label htmlFor="productName">Product Name:</label>
-        <input
-          type="text"
-          id="productName"
-          name="productName"
-          ref={Name}
-        />
+        <input type="text" id="productName" name="productName" ref={Name} />
+
+        
 
         <label htmlFor="productID">Product ID:</label>
-        <input
-          ref={Id}
-          type="text"
-          id="productID"
-          name="productID"
-        />
+        <input ref={Id} type="text" id="productID" name="productID" />
 
         <label htmlFor="manufacturerName">Manufacturer Name:</label>
         <input
-        ref={Manufacturer}
+          ref={Manufacturer}
           type="text"
           id="manufacturerName"
           name="manufacturerName"
@@ -54,7 +66,7 @@ function AddProductPage() {
 
         <label htmlFor="productDescription">Product Description:</label>
         <input
-        ref={Product}
+          ref={Product}
           type="text"
           id="productDescription"
           name="productDescription"
@@ -62,7 +74,7 @@ function AddProductPage() {
 
         <label htmlFor="productQuantity">Product Quantity:</label>
         <input
-        ref={Quality}
+          ref={Quantity}
           type="number"
           id="productQuantity"
           name="productQuantity"
@@ -73,12 +85,11 @@ function AddProductPage() {
           <option value="newStock">New Stock</option>
           <option value="oldStock">Old Stock</option>
         </select>
+
         <Link to="barcode">
-        <button type="submit">
-       
-          Add Products
-       
-        </button>
+          <button type="submit" className={styles.submitButton}>
+            Add Products
+          </button>
         </Link>
       </form>
     </>

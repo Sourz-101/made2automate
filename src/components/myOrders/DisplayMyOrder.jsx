@@ -17,7 +17,7 @@ function DisplayMyOrder({ order }) {
 
         <div className={styles.detailDiv}>
           <p className={styles.price}>
-            Price: <span>{order.price}</span>
+            Price:<span> ₹{order.price}</span>
           </p>
           <p className={styles.cName}>
             Customer Name: <span>{order.customerName}</span>
