@@ -9,4 +9,10 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    z-index: 99;
+}
+
+.btnText {
+    color: white;
+    text-decoration: none;
 }

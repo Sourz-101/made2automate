@@ -1,6 +1,8 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import HomePage from '../components/home/HomePage'
+import Footer from "../components/Footer";
+import { Outlet } from "react-router-dom";
 
 function App() {
 
@@ -11,8 +13,11 @@ function App() {
       </div>
 
       <div className="main-contianer">
-        <HomePage />
+        <Outlet />
+        
+        <Footer />
       </div>
+
     </>
   );
 }

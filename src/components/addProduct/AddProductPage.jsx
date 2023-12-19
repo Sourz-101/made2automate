@@ -1,6 +1,6 @@
 function AddProductPage() {
     return(
-        <h1>Hello Bitch</h1>
+        <h1>Hello Add Product Page</h1>
     );
 }
 
