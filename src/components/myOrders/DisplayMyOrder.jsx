@@ -26,10 +26,12 @@ function DisplayMyOrder({ order }) {
         </div>
 
         <div className={styles.btns}>
+
           <button type="button" className={`btn btn-primary ${styles.btnInside}`}>
             <TbRefreshDot />
             Order Again
           </button>
+          
           <button type="button" className={`btn btn-primary ${styles.btnInside}`}>
             <TbListDetails />
             View Details

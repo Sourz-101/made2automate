@@ -15,4 +15,13 @@
 .btnText {
     color: white;
     text-decoration: none;
+    display: flex;
+    align-items: center;
 }
+
+
+
+
+.btnText > svg {
+    margin-right: 8px;
+  }

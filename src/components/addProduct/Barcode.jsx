@@ -13,7 +13,9 @@ function Barcode({
   productQuantity,
   productCategory,
   productPrice,
-}) {
+}) 
+{
+  // Dummy Data
   productName = "AC Contactor 3 Pole Rating: 32A I Make: SIBASS";
   productImage;
   productId = "IKS-1348";
@@ -26,7 +28,7 @@ function Barcode({
   return (
     <>
       <h1>Barcode</h1>
-
+      
       <div className={styles.success}>
         <p className={styles.successMsg}>
           <img className={styles.img} src="/src/assets/success.png" />
