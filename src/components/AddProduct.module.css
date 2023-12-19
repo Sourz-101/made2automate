@@ -1,0 +1,12 @@
+
+.buttonClass{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+.addButton {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}

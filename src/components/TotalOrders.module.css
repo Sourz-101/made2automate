@@ -1,0 +1,34 @@
+.totalOrders {
+    width: 90%;
+    background-color: aquamarine;
+    margin: 30px auto;
+    padding: 5px;
+    border-radius: 5px;
+    padding-bottom: 20px;
+
+}
+
+.heading {
+    position: relative;
+}
+
+.viewBtn {
+    margin: 5px 0;
+    position: absolute;
+    z-index: 98;
+    top: 25px;
+    right: 2px;
+
+}
+
+.product {
+    margin: 0;
+}
+
+.name {
+    margin: 0;
+}
+
+.listItem {
+    font-weight:500;
+}
