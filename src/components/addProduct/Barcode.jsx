@@ -2,6 +2,7 @@ import { LuCheckCircle } from "react-icons/lu";
 import styles from "./Barcode.module.css";
 import { FaPrint } from "react-icons/fa";
 import { FaSave } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 function Barcode({
   productName,
@@ -61,7 +62,7 @@ function Barcode({
               Quantity: <span>{productQuantity}</span>
             </p>
             <p>
-              Catefory: <span>{productCategory}</span>
+              Cateory: <span>{productCategory}</span>
             </p>
           </div>
         </div>
@@ -69,8 +70,7 @@ function Barcode({
 
       {/*  */}
 
-      {/* <div className={styles.barcodeDiv}>
-
+      <div className={styles.barcodeDiv}>
         <img className={styles.barcodeImg} src="/src/assets/barcode.png" />
 
         <div className={styles.btns}>
@@ -81,6 +81,8 @@ function Barcode({
             <FaPrint />
             Print Barcode
           </button>
+        </div>
+        <div className={styles.btns}>
           <button
             type="button"
             className={`btn btn-primary ${styles.btnInside}`}
@@ -89,23 +91,11 @@ function Barcode({
             Save to device
           </button>
         </div>
-
-      </div> */}
-
-      <div className={styles.barcodeDiv}>
-
-      <img className={styles.barcodeImg} src="/src/assets/barcode.png" />
-
-      <div>
-        <button></button>
-        <br/>
-        <button></button>
       </div>
 
-      </div>
-
-
-
+      <Link to="e-com-listing">
+        <button className={`btn btn-primary ${styles.nextBtn}`}>Next</button>
+      </Link>
     </>
   );
 }

@@ -6,6 +6,7 @@ import AddProductPage from "./components/addProduct/AddProductPage.jsx";
 import HomePage from "./components/home/HomePage.jsx";
 import MyOrderPage from "./components/MyOrders/MyOrderPage.jsx";
 import Barcode from "./components/addProduct/Barcode.jsx";
+import EComListing from "./components/addProduct/EComListing.jsx";
 
 const router = createBrowserRouter([
   {
@@ -15,7 +16,8 @@ const router = createBrowserRouter([
       { path: "/", element: <HomePage /> },
       { path: "/add-product-page", element: <AddProductPage /> },
       { path: "/my-order-page", element: <MyOrderPage/>},
-      { path: "/add-product-page/barcode", element: <Barcode/>}
+      { path: "/add-product-page/barcode", element: <Barcode/>},
+      { path: "/add-product-page/barcode/e-com-listing", element: <EComListing/>}
     ],
   },
 ]);
