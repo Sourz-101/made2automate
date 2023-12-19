@@ -5,6 +5,7 @@ import App from "./routes/App.jsx";
 import AddProductPage from "./components/addProduct/AddProductPage.jsx";
 import HomePage from "./components/home/HomePage.jsx";
 import MyOrderPage from "./components/MyOrders/MyOrderPage.jsx";
+import Barcode from "./components/addProduct/Barcode.jsx";
 
 const router = createBrowserRouter([
   {
@@ -13,7 +14,8 @@ const router = createBrowserRouter([
     children: [
       { path: "/", element: <HomePage /> },
       { path: "/add-product-page", element: <AddProductPage /> },
-      { path: "/my-order-page", element: <MyOrderPage/>}
+      { path: "/my-order-page", element: <MyOrderPage/>},
+      { path: "/add-product-page/barcode", element: <Barcode/>}
     ],
   },
 ]);
