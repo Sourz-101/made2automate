@@ -1,17 +1,11 @@
-.main-contianer{
-    background-color: rgb(224, 223, 223);
-    margin: 10px 10px 0 10px;
-    border-radius: 10px;
-}
 
-/* 
 .nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-img {
+.img {
     width: 100px;
     cursor: pointer;
 }
@@ -33,4 +27,4 @@ img {
 .addProduct {
     text-decoration: none;
     color: inherit;
-} */
+}
