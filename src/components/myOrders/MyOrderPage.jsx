@@ -12,6 +12,7 @@ function MyOrderPage() {
       price: "250",
       customerName: "Rakesh Sinha",
       quantity: 10,
+      link: 'https://made2automate.com/product/18x10x31-rectangular-inductive-sensor-sn-5mm-ii-make-dolphin/'
     },
     {
       imageLink:
@@ -23,6 +24,7 @@ function MyOrderPage() {
       price: "550",
       customerName: "Gaurav Arora",
       quantity: 12,
+      link: 'https://made2automate.com/product/m18-photoelectric-sensor-npn-nc-plug-in-type-sensing-1-meter-ii-make-dolphin/'
     },
     {
       imageLink:
@@ -34,6 +36,7 @@ function MyOrderPage() {
       price: "600",
       customerName: "Swagat Sarkar",
       quantity: 2,
+      link: 'https://made2automate.com/product/cyclic-timer-with-unequal-on-off-time-relay-output-6-time-ranges/'
     },
     {
       imageLink:
@@ -45,6 +48,7 @@ function MyOrderPage() {
       price: "1,200",
       customerName: "Praful Dubey",
       quantity: 1,
+      link: 'https://made2automate.com/product/water-level-controller-with-3-level-sensor-i-model-4421ad1-gic/'
     },
     {
       imageLink:
@@ -55,6 +59,7 @@ function MyOrderPage() {
       price: "350",
       customerName: "Sona Yadav",
       quantity: 20,
+      link: 'https://made2automate.com/product/24vdc-relay-omron-my2n-gs-i-8-pin-relay-with-base/'
     },
     {
       imageLink:
@@ -65,6 +70,7 @@ function MyOrderPage() {
       price: "1,800",
       customerName: "Pranav Mathur",
       quantity: 1,
+      link: 'https://made2automate.com/product/optical-fiber-amplifier-sensor-e3x-na41-ii-make-omron/'
     },
     {
       imageLink:
@@ -75,6 +81,7 @@ function MyOrderPage() {
       price: "1,200",
       customerName: "Narendra Modi",
       quantity: 5,
+      link: 'https://made2automate.com/product/smps-24vdc-lrs-100-24-power-supply-rating-4-5a-meanwell/'
     },
     {
       imageLink:
@@ -85,11 +92,12 @@ function MyOrderPage() {
       price: "500",
       customerName: "Rohit Banarjee",
       quantity: 4,
+      link: 'https://made2automate.com/product/ac-contactor-3-pole-rating-32a-i-make-sibass/'
     },
   ];
   return (
     <>
-      <h1>Your Orders</h1>
+      <h1 className={styles.h1}>Your Orders</h1>
 
       {orderList.map((order, index) => (
         <DisplayMyOrder key={index} order={order} />

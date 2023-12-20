@@ -1,5 +1,4 @@
-import styles from "./TotalLeads.module.css";
-import { useState } from "react";
+import CardTemplate from "./CardTemplate";
 
 function TotalLeads() {
   const initialItems = [
@@ -40,47 +39,12 @@ function TotalLeads() {
     },
   ];
 
-  const [itemsToShow, setItemsToShow] = useState(2);
-
-  const handleViewAllClick = () => {
-    if (itemsToShow === 2) {
-      setItemsToShow(initialItems.length);
-    } else {
-      setItemsToShow(2);
-    }
-  };
-
   return (
-    <div className={styles.totalLeads}>
-      <div className={`${styles.heading}`}>
-        <h4>Total Leads</h4>
-        <p>A summary of your leads received</p>
+    <>
 
-        <div>
-          <button
-            onClick={handleViewAllClick}
-            className={`btn btn-primary ${styles.viewBtn}`}
-          >
-            View All
-          </button>
-        </div>
-      </div>
+    <CardTemplate listHeading={'Total Leads'} listItem={initialItems} />
 
-      <ul className={`list-group`}>
-        {initialItems.slice(0, itemsToShow).map((item, index) => (
-          <li className={`${styles.listItem} list-group-item`} key={index}>
-            <p className={`fs-4 text fw-semibold ${styles.product}`}>
-              {item.product}
-            </p>
-            <p className={styles.name}>{item.name}</p>
-            Quantity: <span className={styles.quantity}>
-              {item.quantity}
-            </span>{" "}
-            Pieces
-          </li>
-        ))}
-      </ul> 
-    </div>
+    </>
   );
 }
 

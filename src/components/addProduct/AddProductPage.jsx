@@ -25,8 +25,6 @@ function AddProductPage() {
     const productCategory = Category.current.value;
     const productPrice = Price.current.value;
 
-
-
     <Barcode
       productName={productName}
       productImage={productImage}
@@ -36,13 +34,12 @@ function AddProductPage() {
       productQuantity={productQuantity}
       productCategory={productCategory}
       productPrice={productPrice}
-    />
+    />;
   };
 
-
   return (
-    <>
-      <h1>Add Product</h1>
+    <div className={styles.outerDiv}>
+      <h1 className={styles.h1}>Add Product</h1>
       <form className={styles.form} onSubmit={handleSubmit}>
         <label htmlFor="productImage">Upload Product Image:</label>
         <input
@@ -106,7 +103,7 @@ function AddProductPage() {
           </button>
         </Link>
       </form>
-    </>
+    </div>
   );
 }
 

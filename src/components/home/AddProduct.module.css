@@ -2,7 +2,7 @@
 .buttonClass{
     position: fixed;
     bottom: 10px;
-    right: 10px;
+    right: 20px;
 }
 
 .addButton {
@@ -17,9 +17,8 @@
     text-decoration: none;
     display: flex;
     align-items: center;
+    font-size: 18px;
 }
-
-
 
 
 .btnText > svg {

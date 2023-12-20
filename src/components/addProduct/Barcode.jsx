@@ -27,7 +27,7 @@ function Barcode({
   productPrice = "300";
   return (
     <>
-      <h1>Barcode</h1>
+      <h1 className={styles.h1}>Barcode Generation</h1>
       
       <div className={styles.success}>
         <p className={styles.successMsg}>
@@ -38,7 +38,7 @@ function Barcode({
 
       <div className={styles.outerDiv}>
         <img
-          src="/src/assets/made2automate.ico"
+          src="https://i0.wp.com/made2automate.com/wp-content/uploads/2023/05/1-16.webp?fit=600%2C600&ssl=1"
           alt={productName}
           className={styles.productImg}
         />
@@ -70,7 +70,7 @@ function Barcode({
         </div>
       </div>
 
-      {/*  */}
+
 
       <div className={styles.barcodeDiv}>
         <img className={styles.barcodeImg} src="/src/assets/barcode.png" />

@@ -1,19 +1,20 @@
 .outerDiv {
     background-color: aliceblue;
     display: flex;
-    margin: 10px 50px;
-    padding: 15px 20px;
+    margin: 2vh 15vw;
+    padding: 15px 50px;
     border-radius: 15px;
 }
 
 .img {
-    width: 20vw;
+    width: 15vw;
     max-width: 300px;
     max-height: 300px;
     border-radius: 5px;
 }
 
 .name {
+    text-align: start;
     font-size: 20px;
     font-weight: 700;
 }

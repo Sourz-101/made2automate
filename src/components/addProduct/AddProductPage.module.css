@@ -1,4 +1,18 @@
 /*  */
+
+.outerDiv {
+  background-color: aliceblue;
+  margin: 2vh 25vw;
+  padding: 15px 50px;
+  border-radius: 15px;
+}
+
+
+.h1 {
+  text-align: center;
+  margin: 20px auto;
+}
+
 form {
   max-width: 60vw;
   margin: 0 auto;

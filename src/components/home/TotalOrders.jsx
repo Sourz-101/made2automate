@@ -1,5 +1,5 @@
-import styles from "./TotalOrders.module.css";
-import React, { useState } from "react";
+import CardTemplate from "./CardTemplate";
+
 
 function TotalOrders() {
   const initialItems = [
@@ -40,47 +40,9 @@ function TotalOrders() {
     },
   ];
 
-  const [itemsToShow, setItemsToShow] = useState(2);
-
-  const handleViewAllClick = () => {
-    if (itemsToShow === 2) {
-      setItemsToShow(initialItems.length);
-    } else {
-      setItemsToShow(2);
-    }
-  };
-
   return (
-    <div className={styles.totalOrders}>
-      <div className={`${styles.heading}`}>
-        <h4>Total Orders</h4>
-        <p>A summary of your orders</p>
 
-        <div>
-          <button
-            onClick={handleViewAllClick}
-            className={`btn btn-primary ${styles.viewBtn}`}
-          >
-            View All
-          </button>
-        </div>
-      </div>
-
-      <ul className={`list-group`}>
-        {initialItems.slice(0, itemsToShow).map((item, index) => (
-          <li className={`${styles.listItem} list-group-item`} key={index}>
-            <p className={`fs-4 text fw-semibold ${styles.product}`}>
-              {item.product}
-            </p>
-            <p className={styles.name}>{item.name}</p>
-            Quantity: <span className={styles.quantity}>
-              {item.quantity}
-            </span>{" "}
-            Pieces
-          </li>
-        ))}
-      </ul>
-    </div>
+    <CardTemplate listHeading={'Total Orders'} listItem={initialItems}/>
   );
 }
 

@@ -13,12 +13,12 @@ function EComListing() {
 
   return (
     <>
-      <h1>E-Commerce Listing</h1>
+      <h1 className={styles.h1}>E-Commerce Listing</h1>
 
 
       <div className={styles.outerDiv}>
         <img
-          src="/src/assets/made2automate.ico"
+          src="https://i0.wp.com/made2automate.com/wp-content/uploads/2023/05/1-16.webp?fit=600%2C600&ssl=1"
           alt={productName}
           className={styles.productImg}
         />

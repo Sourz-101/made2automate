@@ -1,12 +1,17 @@
-h1 {
+.h1 {
     padding-top: 20px;
+    text-align: center;
+    margin: 20px auto;
 }
 
 .success {
     background-color: aliceblue;
-    margin: 10px 50px;
-    padding: 15px 20px;
+    margin: 2vh 15vw;
+    padding: 15px 50px;
     border-radius: 15px;
+    /* margin: 10px 50px;
+    padding: 15px 20px;
+    border-radius: 15px; */
 }
 
 .successMsg {
@@ -26,9 +31,12 @@ h1 {
 .outerDiv {
     background-color: aliceblue;
     display: flex;
-    margin: 10px 50px;
+    /* margin: 10px 50px;
     padding: 15px 55px;
 
+    border-radius: 15px; */
+    margin: 2vh 15vw;
+    padding: 15px 50px;
     border-radius: 15px;
 }
 
@@ -42,6 +50,7 @@ h1 {
 .name {
     font-size: 20px;
     font-weight: 700;
+    text-align: left;
 }
 
 .desc {
@@ -56,30 +65,36 @@ h1 {
 
 .divAligner {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: start;
     font-weight: 700;
     color: #0b5ed7;
+}
 
+.divAligner > p {
+    margin-right: 2vw;
 }
 
 /*  */
 
 .barcodeDiv {
     background-color: aliceblue;
-    margin: 10px 50px;
+    /* margin: 10px 50px;
     padding: 15px 20px;
+    border-radius: 15px; */
+    margin: 2vh 15vw;
+    padding: 15px 50px;
     border-radius: 15px;
     display: flex;
     justify-content: space-around;
 }
 
 .barcodeImg {
-    width: 20vw;
-    height: 20vw;
+    width: 15vw;
+    height: 12vw;
 }
 
 .btns {
-    padding: 100px;
+    padding-top: 70px;
 
 }
 
@@ -97,7 +112,8 @@ h1 {
 /*  */
 
 .nextBtn {
-    margin: 10px 50px;
-    padding: 15px 20px;
-    
+    /* margin: 10px 50px;
+    padding: 15px 20px; */
+    margin: 2vh 15vw;
+    padding: 15px 50px;
 }

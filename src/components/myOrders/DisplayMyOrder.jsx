@@ -1,8 +1,14 @@
-import styles from "./DisplayMyOrder.module.css"
+import styles from "./DisplayMyOrder.module.css";
 import { TbRefreshDot } from "react-icons/tb";
 import { TbListDetails } from "react-icons/tb";
 
+
 function DisplayMyOrder({ order }) {
+
+    const handleButtonClick = () => {
+      window.open(order.link, '_blank');
+    };
+
   return (
     <div className={styles.outerDiv}>
       <img
@@ -26,13 +32,20 @@ function DisplayMyOrder({ order }) {
         </div>
 
         <div className={styles.btns}>
-
-          <button type="button" className={`btn btn-primary ${styles.btnInside}`}>
+          <button
+            type="button"
+            className={`btn btn-primary ${styles.btnInside}`}
+            onClick={handleButtonClick}
+          >
             <TbRefreshDot />
             Order Again
           </button>
-          
-          <button type="button" className={`btn btn-primary ${styles.btnInside}`}>
+
+          <button
+            type="button"
+            className={`btn btn-primary ${styles.btnInside}`}
+            onClick={handleButtonClick}
+          >
             <TbListDetails />
             View Details
           </button>

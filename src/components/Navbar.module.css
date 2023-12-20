@@ -1,12 +1,20 @@
 
 .nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 1000;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .img {
-    width: 100px;
+    margin: 0px 80px;
+    width: 120px;
     cursor: pointer;
 }
 
