@@ -4,6 +4,8 @@
     margin: 2vh 15vw;
     padding: 15px 50px;
     border-radius: 15px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+
 }
 
 .img {
