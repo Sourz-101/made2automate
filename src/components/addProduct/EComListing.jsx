@@ -1,15 +1,21 @@
+import { useContext } from "react";
 import styles from "./EComListing.module.css";
 import { MdCloudUpload } from "react-icons/md";
+import { ProductData } from "../../store/add-product-store";
 
 function EComListing() {
-  const productName = "AC Contactor 3 Pole Rating: 32A I Make: SIBASS";
-  const productId = "IKS-1348";
-  const productManufacturer = "Tata";
-  const productDescription =
-    "AC contactor is used to switch heavy loads like Motor,AC or Heater. It needs a control signal which is of 220VAC to trigger.";
-  const productQuantity = 2;
-  const productCategory = "New Stock";
-  const productPrice = "300";
+
+  const { data } = useContext(ProductData);
+
+  const {
+    productName,
+    productId,
+    productManufacturer,
+    productDescription,
+    productQuantity,
+    productCategory,
+    productPrice,
+  } = data;
 
   return (
     <>

@@ -1,7 +1,7 @@
-import React, { useState, useRef } from "react";
-import { Link, useHref } from "react-router-dom";
+import React, { useState, useRef, useContext } from "react";
+import { Link, redirect, useHref } from "react-router-dom";
 import styles from "./AddProductPage.module.css";
-import Barcode from "./Barcode";
+import { ProductData } from "../../store/add-product-store";
 
 function AddProductPage() {
   const Name = useRef();
@@ -13,8 +13,12 @@ function AddProductPage() {
   const Category = useRef();
   const Price = useRef();
 
+  const { updateData } = useContext(ProductData);
+  const [buttonVisible, setButtonVisible] = useState(true);
+
   const handleSubmit = (event) => {
     event.preventDefault();
+
 
     const productImage = Image.current.value;
     const productName = Name.current.value;
@@ -25,27 +29,19 @@ function AddProductPage() {
     const productCategory = Category.current.value;
     const productPrice = Price.current.value;
 
-    console.log(`
-      productName = ${productName}
-      productImage = ${productImage}
-      productId =${productId}
-      productManufacturer= ${productManufacturer}
-      productDescription=${productDescription}
-      productQuantity=${productQuantity}
-      productCategory=${productCategory}
-      productPrice=${productPrice}`
-    );
-
-    <Barcode
-      productName={productName}
-      productImage={productImage}
-      productId={productId}
-      productManufacturer={productManufacturer}
-      productDescription={productDescription}
-      productQuantity={productQuantity}
-      productCategory={productCategory}
-      productPrice={productPrice}
-    />;
+    const newProductData = {
+      productImage,
+      productName,
+      productId,
+      productManufacturer,
+      productDescription,
+      productQuantity,
+      productCategory,
+      productPrice,
+    };
+    updateData(newProductData);
+    // window.location.href = "/add-product-page/barcode";
+    setButtonVisible(false);
   };
 
   return (
@@ -108,11 +104,25 @@ function AddProductPage() {
           <option value="oldStock">Old Stock</option>
         </select>
 
-        <Link to="barcode">
+        {/* <Link to="barcode">
         <button type="submit" className={styles.submitButton}>
           Add Products
         </button>
-        </Link>
+        </Link> */}
+
+
+
+        {buttonVisible && <button type="submit" className={styles.submitButton}>
+          Add Products
+        </button>}
+
+
+        {!buttonVisible && <Link to="barcode">
+        <button type="link" className={styles.submitButton}>
+         next
+        </button>        
+        </Link>}
+
       </form>
     </div>
   );

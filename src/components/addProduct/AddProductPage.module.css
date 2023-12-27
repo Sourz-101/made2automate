@@ -75,3 +75,6 @@ select {
   cursor: pointer;
 }
 
+.onclickStyle {
+  display: none;
+}

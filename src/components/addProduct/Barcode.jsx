@@ -3,26 +3,36 @@ import styles from "./Barcode.module.css";
 import { FaPrint } from "react-icons/fa";
 import { FaSave } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import { useContext } from "react";
+import { ProductData } from "../../store/add-product-store";
 
-function Barcode({
-  productName,
-  productImage,
-  productId,
-  productManufacturer,
-  productDescription,
-  productQuantity,
-  productCategory,
-  productPrice,
-}) {
-  productName = "AC Contactor 3 Pole Rating: 32A I Make: SIBASS";
-  productImage;
-  productId = "IKS-1348";
-  productManufacturer = "Tata";
-  productDescription =
-    "AC contactor is used to switch heavy loads like Motor,AC or Heater. It needs a control signal which is of 220VAC to trigger.";
-  productQuantity = 2;
-  productCategory = "New Stock";
-  productPrice = "300";
+function Barcode() {
+
+  const { data } = useContext(ProductData);
+  console.log(data);
+
+  // productName = "AC Contactor 3 Pole Rating: 32A I Make: SIBASS";
+  // productImage;
+  // productId = "IKS-1348";
+  // productManufacturer = "Tata";
+  // productDescription =
+  //   "AC contactor is used to switch heavy loads like Motor,AC or Heater. It needs a control signal which is of 220VAC to trigger.";
+  // productQuantity = 2;
+  // productCategory = "New Stock";
+  // productPrice = "300";
+
+  const {
+    productImage,
+    productName,
+    productId,
+    productManufacturer,
+    productDescription,
+    productQuantity,
+    productCategory,
+    productPrice,
+  } = data;
+
+
   return (
     <>
       {/* {console.log(
