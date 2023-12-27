@@ -25,6 +25,17 @@ function AddProductPage() {
     const productCategory = Category.current.value;
     const productPrice = Price.current.value;
 
+    console.log(`
+      productName = ${productName}
+      productImage = ${productImage}
+      productId =${productId}
+      productManufacturer= ${productManufacturer}
+      productDescription=${productDescription}
+      productQuantity=${productQuantity}
+      productCategory=${productCategory}
+      productPrice=${productPrice}`
+    );
+
     <Barcode
       productName={productName}
       productImage={productImage}
@@ -98,9 +109,9 @@ function AddProductPage() {
         </select>
 
         <Link to="barcode">
-          <button type="submit" className={styles.submitButton}>
-            Add Products
-          </button>
+        <button type="submit" className={styles.submitButton}>
+          Add Products
+        </button>
         </Link>
       </form>
     </div>
